@@ -1,0 +1,20 @@
+{
+    "botman/driver-config": [
+        "stubs/instagram.php"
+    ],
+    "botman/driver": [
+        "BotMan\\Drivers\\Instagram\\InstagramDriver",
+        "BotMan\\Drivers\\Instagram\\InstagramAudioDriver",
+        "BotMan\\Drivers\\Instagram\\InstagramFileDriver",
+        "BotMan\\Drivers\\Instagram\\InstagramImageDriver",
+        "BotMan\\Drivers\\Instagram\\InstagramLocationDriver",
+        "BotMan\\Drivers\\Instagram\\InstagramVideoDriver"
+    ],
+    "botman/commands": [
+        "BotMan\\Drivers\\Instagram\\Commands\\AddPersistentMenu",
+        "BotMan\\Drivers\\Instagram\\Commands\\AddStartButtonPayload",
+        "BotMan\\Drivers\\Instagram\\Commands\\AddGreetingText",
+        "BotMan\\Drivers\\Instagram\\Commands\\WhitelistDomains",
+        "BotMan\\Drivers\\Instagram\\Commands\\Nlp"
+    ]
+}

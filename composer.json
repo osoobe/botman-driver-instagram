@@ -1,0 +1,54 @@
+{
+    "name": "botman/driver-instagram",
+    "license": "MIT",
+    "description": "Instagram Messenger driver for BotMan",
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "Instagram Messenger",
+        "Instagram",
+        "Messenger"
+    ],
+    "homepage": "http://github.com/osoobe/botman-driver-instagram",
+    "authors": [
+        {
+            "name": "Oshane Bailey",
+            "email": "oshane@osoobe.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "botman/botman": "~2.1|~3.0"
+    },
+    "require-dev": {
+        "botman/studio-addons": "^1.0",
+        "phpunit/phpunit": "^5.0",
+        "illuminate/contracts": "^5.5",
+        "mockery/mockery": "^1.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\Instagram\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "cs": "php-cs-fixer fix"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "BotMan\\Drivers\\Instagram\\Providers\\InstagramServiceProvider"
+            ]
+        }
+    }
+}
