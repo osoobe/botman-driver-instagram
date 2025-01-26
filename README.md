@@ -2,9 +2,9 @@
 
 BotMan driver to connect Instagram messenger with [BotMan](https://github.com/botman/botman)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/botman/driver-facebook.svg?style=flat-square)](https://packagist.org/packages/botman/driver-facebook)
-[![Build Status](https://travis-ci.org/botman/driver-facebook.svg?branch=master)](https://travis-ci.org/botman/driver-facebook)
-[![codecov](https://codecov.io/gh/botman/driver-facebook/branch/master/graph/badge.svg)](https://codecov.io/gh/botman/driver-facebook)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/botman/driver-instagram.svg?style=flat-square)](https://packagist.org/packages/botman/driver-instagram)
+[![Build Status](https://travis-ci.org/botman/driver-instagram.svg?branch=master)](https://travis-ci.org/botman/driver-instagram)
+[![codecov](https://codecov.io/gh/botman/driver-instagram/branch/master/graph/badge.svg)](https://codecov.io/gh/botman/driver-instagram)
 
 
 ## Contributing

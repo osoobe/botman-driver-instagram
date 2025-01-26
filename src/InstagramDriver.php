@@ -92,7 +92,7 @@ class InstagramDriver extends HttpDriver implements VerifiesService
         $this->event = Collection::make((array) $this->payload->get('entry', [null])[0]);
         $this->signature = $request->headers->get('X_HUB_SIGNATURE', '');
         $this->content = $request->getContent();
-        $this->config = Collection::make($this->config->get('instagram', []));
+        $this->config = Collection::make($this->config->get('Instagram', []));
     }
 
     /**
@@ -117,23 +117,7 @@ class InstagramDriver extends HttpDriver implements VerifiesService
     public function verifyRequest(Request $request)
     {
         if ($request->get('hub_mode') === 'subscribe' && $request->get('hub_verify_token') === $this->config->get('verification')) {
-            
-        
-            \Instagram::log(json_encode([
-                "l" => "Botman 417",
-                'd' => "FB success",
-                'r' => request()->all()
-            ]), null);
-
             return Response::create($request->get('hub_challenge'))->send();
-        } else {
-            
-            \Instagram::log(json_encode([
-                "l" => "Botman 417",
-                'd' => "FB failed",
-                'r' => request()->all(),
-                'c' => $this->config->get('verification')
-            ]), null);
         }
     }
 
